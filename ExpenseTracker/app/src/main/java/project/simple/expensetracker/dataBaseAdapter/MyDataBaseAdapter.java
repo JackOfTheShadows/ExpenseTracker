@@ -66,7 +66,7 @@ public class MyDataBaseAdapter extends SQLiteOpenHelper{
         }
     }
 
-    public List<DataBaseEntry> getEtry() {
+    public List<DataBaseEntry> getAllEtries() {
         SQLiteDatabase db = this.getReadableDatabase();
         List<DataBaseEntry> myTempList = new ArrayList<DataBaseEntry>();
 
@@ -78,7 +78,7 @@ public class MyDataBaseAdapter extends SQLiteOpenHelper{
         if (c.moveToFirst()) {
             do {
                 DataBaseEntry dbe = new DataBaseEntry();
-                dbe.setName(c.getString(c.getColumnIndex("Name"));
+                dbe.setName(c.getString(c.getColumnIndex("Name")));
                 dbe.setComment(c.getString(c.getColumnIndex("Comment")));
                 dbe.setDate(c.getString(c.getColumnIndex("Date")));
                 dbe.setCost(c.getDouble(c.getColumnIndex("Cost")));
