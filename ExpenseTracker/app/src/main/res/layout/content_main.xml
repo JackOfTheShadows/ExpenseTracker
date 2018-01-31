@@ -8,4 +8,7 @@
     tools:context="project.simple.expensetracker.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+
+
+
 </android.support.constraint.ConstraintLayout>
