@@ -10,6 +10,10 @@ import android.support.annotation.Nullable;
 
 public class EntryService extends IntentService
 {
+    public EntryService(String name) {
+        super(name);
+    }
+
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
 
